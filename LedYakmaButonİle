@@ -1,0 +1,21 @@
+#define led 8
+#define buton 10
+
+int buton_durumu = 0;
+
+void setup() {
+  pinMode(8,OUTPUT);
+  pinMode(10,OUTPUT); 
+}
+void loop() {
+
+  buton_durumu=digitalRead(10);
+
+  if(buton_durumu == 1 ){
+    digitalWrite(8,HIGH);
+  }
+  else {
+    digitalWrite(8,LOW);
+  }
+  
+}
